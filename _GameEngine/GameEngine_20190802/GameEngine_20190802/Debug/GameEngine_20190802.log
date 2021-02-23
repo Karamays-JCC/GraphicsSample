@@ -1,0 +1,23 @@
+﻿  Engine.cpp
+  UGameInstance.cpp
+  UDispatcher.cpp
+  UNetPackage.cpp
+C:\Projects\Visual Studio 2019\Source\GameEngine_20190802\GameEngine_20190802\Engine\Core\Framework\Net\NetPackage\UNetPackage.cpp(48,29): warning C4244:  '=': conversion from 'int' to 'T', possible loss of data
+C:\Projects\Visual Studio 2019\Source\GameEngine_20190802\GameEngine_20190802\Engine\Core\Framework\Net\NetPackage\UNetPackage.cpp(48,29): warning C4244:         with
+C:\Projects\Visual Studio 2019\Source\GameEngine_20190802\GameEngine_20190802\Engine\Core\Framework\Net\NetPackage\UNetPackage.cpp(48,29): warning C4244:         [
+C:\Projects\Visual Studio 2019\Source\GameEngine_20190802\GameEngine_20190802\Engine\Core\Framework\Net\NetPackage\UNetPackage.cpp(48,29): warning C4244:             T=float
+C:\Projects\Visual Studio 2019\Source\GameEngine_20190802\GameEngine_20190802\Engine\Core\Framework\Net\NetPackage\UNetPackage.cpp(48,29): warning C4244:         ]
+C:\Projects\Visual Studio 2019\Source\GameEngine_20190802\GameEngine_20190802\Engine\Core\Framework\Net\NetPackage\UNetPackage.cpp(49,29): warning C4244:  '=': conversion from 'int' to 'T', possible loss of data
+C:\Projects\Visual Studio 2019\Source\GameEngine_20190802\GameEngine_20190802\Engine\Core\Framework\Net\NetPackage\UNetPackage.cpp(49,29): warning C4244:         with
+C:\Projects\Visual Studio 2019\Source\GameEngine_20190802\GameEngine_20190802\Engine\Core\Framework\Net\NetPackage\UNetPackage.cpp(49,29): warning C4244:         [
+C:\Projects\Visual Studio 2019\Source\GameEngine_20190802\GameEngine_20190802\Engine\Core\Framework\Net\NetPackage\UNetPackage.cpp(49,29): warning C4244:             T=float
+C:\Projects\Visual Studio 2019\Source\GameEngine_20190802\GameEngine_20190802\Engine\Core\Framework\Net\NetPackage\UNetPackage.cpp(49,29): warning C4244:         ]
+  UNetUnit.cpp
+  RenderingUnit.cpp
+  Generating Code...
+C:\Projects\Visual Studio 2019\Source\GameEngine_20190802\GameEngine_20190802\Engine\Core\Framework\Net\NetPackage\UNetPackage.cpp(50,29): warning C4244:  '=': conversion from 'int' to 'T', possible loss of data
+C:\Projects\Visual Studio 2019\Source\GameEngine_20190802\GameEngine_20190802\Engine\Core\Framework\Net\NetPackage\UNetPackage.cpp(50,29): warning C4244:         with
+C:\Projects\Visual Studio 2019\Source\GameEngine_20190802\GameEngine_20190802\Engine\Core\Framework\Net\NetPackage\UNetPackage.cpp(50,29): warning C4244:         [
+C:\Projects\Visual Studio 2019\Source\GameEngine_20190802\GameEngine_20190802\Engine\Core\Framework\Net\NetPackage\UNetPackage.cpp(50,29): warning C4244:             T=float
+C:\Projects\Visual Studio 2019\Source\GameEngine_20190802\GameEngine_20190802\Engine\Core\Framework\Net\NetPackage\UNetPackage.cpp(50,29): warning C4244:         ]
+  GameEngine_20190802.vcxproj -> C:\Projects\Visual Studio 2019\Source\GameEngine_20190802\Debug\GameEngine_20190802.exe

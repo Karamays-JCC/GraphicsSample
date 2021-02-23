@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{D15FEACC-4155-4DA0-9DC4-26C73A637A9B}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>GameEngine20190802</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>Dependencies\glm_pack\include;Dependencies\glfw-3.3.bin.WIN32\include;Dependencies\glew-2.1.0\include;Engine\Core;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>Dependencies\glew-2.1.0\lib\Release\Win32;Dependencies\glfw-3.3.bin.WIN32\lib-vc2019;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opengl32.lib;glew32s.lib;glfw3.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Engine\Core\Callback\CallbackList\UCallbackList.cpp" />
+    <ClCompile Include="Engine\Core\Constant\UConstant.cpp" />
+    <ClCompile Include="Engine\Core\Framework\Actor\UActor.cpp" />
+    <ClCompile Include="Engine\Core\Framework\Component\ActorComponent\SceneComponent\UPrimitiveComponent\ShapeComponent\BoxComponent\UBoxComponent.cpp" />
+    <ClCompile Include="Engine\Core\Framework\Component\ActorComponent\SceneComponent\UPrimitiveComponent\ShapeComponent\CapsuleComponent\UCapsuleComponent.cpp" />
+    <ClCompile Include="Engine\Core\Framework\Component\ActorComponent\SceneComponent\UPrimitiveComponent\ShapeComponent\SphereComponent\USphereComponent.cpp" />
+    <ClCompile Include="Engine\Core\Framework\GameMode\AGameMode.cpp" />
+    <ClCompile Include="Engine\Core\Framework\Interface\ISerializable.cpp" />
+    <ClCompile Include="Engine\Core\Framework\Net\Client\UClient.cpp" />
+    <ClCompile Include="Engine\Core\Framework\Net\Dispatcher\UDispatcher.cpp" />
+    <ClCompile Include="Engine\Core\Framework\Net\Handler\UNetHandler.cpp" />
+    <ClCompile Include="Engine\Core\Framework\Net\NetConnection\Channel\UActorChannel.cpp" />
+    <ClCompile Include="Engine\Core\Framework\Net\NetConnection\Channel\UChannel.cpp" />
+    <ClCompile Include="Engine\Core\Framework\Net\NetConnection\Channel\UControlChannel.cpp" />
+    <ClCompile Include="Engine\Core\Framework\Net\NetConnection\Channel\UVoiceChannel.cpp" />
+    <ClCompile Include="Engine\Core\Framework\Net\NetConnection\UChildConnection.cpp" />
+    <ClCompile Include="Engine\Core\Framework\Net\NetConnection\UNetConnection.cpp" />
+    <ClCompile Include="Engine\Core\Framework\Net\NetDriver\UNetDriver.cpp" />
+    <ClCompile Include="Engine\Core\Framework\Net\NetPackage\UNetPackage.cpp" />
+    <ClCompile Include="Engine\Core\Framework\Net\Player\ULocalPlayer.cpp" />
+    <ClCompile Include="Engine\Core\Framework\Net\Player\UPlayer.cpp" />
+    <ClCompile Include="Engine\Core\Framework\Net\Server\UServer.cpp" />
+    <ClCompile Include="Engine\Core\Framework\Object\UObject.cpp" />
+    <ClCompile Include="Engine\Core\Framework\PlayerController\UPlayerController.cpp" />
+    <ClCompile Include="Engine\Core\Framework\Net\Socket\ListeningSocket\UListeningSocket.cpp" />
+    <ClCompile Include="Engine\Core\Framework\Net\Socket\LocalSocket\ULocalSocket.cpp" />
+    <ClCompile Include="Engine\Core\Framework\Net\Socket\RemoteSocket\URemoteSocket.cpp" />
+    <ClCompile Include="Engine\Core\Framework\Net\Socket\USocket.cpp" />
+    <ClCompile Include="Engine\Core\Framework\Utils\UGUIDMaker.cpp" />
+    <ClCompile Include="Engine\Core\Engine\Engine.cpp" />
+    <ClCompile Include="Engine\Core\Framework\World\UWorld.cpp" />
+    <ClCompile Include="Engine\Core\Unit\NetUnit\UNetUnit.cpp" />
+    <ClCompile Include="Engine\Core\Unit\PhysicsUnit\PhysicsUnit.cpp" />
+    <ClCompile Include="Engine\Core\Framework\Camera\Camera.cpp" />
+    <ClCompile Include="Engine\Core\Framework\GameInstance\UGameInstance.cpp" />
+    <ClCompile Include="Engine\Core\Framework\Interface\IRenderable.cpp" />
+    <ClCompile Include="Engine\Core\Framework\Level\ULevel.cpp" />
+    <ClCompile Include="Engine\Core\Framework\Light\DirectionalLight\UDirectionalLight.cpp" />
+    <ClCompile Include="Engine\Core\Framework\Light\PointLight\UPointLight.cpp" />
+    <ClCompile Include="Engine\Core\Framework\Light\SpotLight\USpotLight.cpp" />
+    <ClCompile Include="Engine\Core\Framework\Material\UMaterial.cpp" />
+    <ClCompile Include="Engine\Core\Framework\Mesh\UMesh.cpp" />
+    <ClCompile Include="Engine\Core\Framework\Model\UModel.cpp" />
+    <ClCompile Include="Engine\Core\Framework\Program\Program.cpp" />
+    <ClCompile Include="Engine\Core\Framework\RenderableObject\RenderableObject.cpp" />
+    <ClCompile Include="Engine\Core\Framework\ShaderFilePool\UShaderFilePool.cpp" />
+    <ClCompile Include="Engine\Core\Framework\Shader\FragmentShader\UFragmentShader.cpp" />
+    <ClCompile Include="Engine\Core\Framework\Shader\GeometryShader\UGeometryShader.cpp" />
+    <ClCompile Include="Engine\Core\Framework\Shader\TESSControlShader\UTESSControlShader.cpp" />
+    <ClCompile Include="Engine\Core\Framework\Shader\TESSEvaluationShader\UTESSEvaluationShader.cpp" />
+    <ClCompile Include="Engine\Core\Framework\Shader\UShader.cpp" />
+    <ClCompile Include="Engine\Core\Framework\Shader\VertexShader\UVertexShader.cpp" />
+    <ClCompile Include="Engine\Core\Framework\Texture\Texture2D\UTexture2D.cpp" />
+    <ClCompile Include="Engine\Core\Framework\Texture\TextureCube\UTextureCube.cpp" />
+    <ClCompile Include="Engine\Core\Framework\Texture\UTexture.cpp" />
+    <ClCompile Include="Engine\Core\Unit\RenderingUnit\RenderingUnit.cpp" />
+    <ClCompile Include="Engine\Core\Framework\Utils\FileLoader\UFileLoader.cpp" />
+    <ClCompile Include="Engine\Core\Global\Global.cpp" />
+    <ClCompile Include="GameEngine_20190802.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Engine\Core\Callback\CallbackList\UCallbackList.h" />
+    <ClInclude Include="Engine\Core\Constant\UConstant.h" />
+    <ClInclude Include="Engine\Core\Framework\Actor\UActor.h" />
+    <ClInclude Include="Engine\Core\Framework\Component\ActorComponent\SceneComponent\UPrimitiveComponent\ShapeComponent\BoxComponent\UBoxComponent.h" />
+    <ClInclude Include="Engine\Core\Framework\Component\ActorComponent\SceneComponent\UPrimitiveComponent\ShapeComponent\CapsuleComponent\UCapsuleComponent.h" />
+    <ClInclude Include="Engine\Core\Framework\Component\ActorComponent\SceneComponent\UPrimitiveComponent\ShapeComponent\SphereComponent\USphereComponent.h" />
+    <ClInclude Include="Engine\Core\Framework\GameMode\AGameMode.h" />
+    <ClInclude Include="Engine\Core\Framework\Interface\ISerializable.h" />
+    <ClInclude Include="Engine\Core\Framework\Net\Client\UClient.h" />
+    <ClInclude Include="Engine\Core\Framework\Net\Dispatcher\UDispatcher.h" />
+    <ClInclude Include="Engine\Core\Framework\Net\Handler\UNetHandler.h" />
+    <ClInclude Include="Engine\Core\Framework\Net\NetConnection\Channel\UActorChannel.h" />
+    <ClInclude Include="Engine\Core\Framework\Net\NetConnection\Channel\UChannel.h" />
+    <ClInclude Include="Engine\Core\Framework\Net\NetConnection\Channel\UControlChannel.h" />
+    <ClInclude Include="Engine\Core\Framework\Net\NetConnection\Channel\UVoiceChannel.h" />
+    <ClInclude Include="Engine\Core\Framework\Net\NetConnection\UChildConnection.h" />
+    <ClInclude Include="Engine\Core\Framework\Net\NetConnection\UNetConnection.h" />
+    <ClInclude Include="Engine\Core\Framework\Net\NetDriver\UNetDriver.h" />
+    <ClInclude Include="Engine\Core\Framework\Net\NetPackage\UNetPackage.h" />
+    <ClInclude Include="Engine\Core\Framework\Net\Player\ULocalPlayer.h" />
+    <ClInclude Include="Engine\Core\Framework\Net\Player\UPlayer.h" />
+    <ClInclude Include="Engine\Core\Framework\Net\Server\UServer.h" />
+    <ClInclude Include="Engine\Core\Framework\Object\UObject.h" />
+    <ClInclude Include="Engine\Core\Framework\PlayerController\UPlayerController.h" />
+    <ClInclude Include="Engine\Core\Framework\Net\Socket\ListeningSocket\UListeningSocket.h" />
+    <ClInclude Include="Engine\Core\Framework\Net\Socket\LocalSocket\ULocalSocket.h" />
+    <ClInclude Include="Engine\Core\Framework\Net\Socket\RemoteSocket\URemoteSocket.h" />
+    <ClInclude Include="Engine\Core\Framework\Net\Socket\USocket.h" />
+    <ClInclude Include="Engine\Core\Framework\Utils\UGUIDMaker.h" />
+    <ClInclude Include="Engine\Core\Engine\Engine.h" />
+    <ClInclude Include="Engine\Core\Framework\World\UWorld.h" />
+    <ClInclude Include="Engine\Core\Function\Function.h" />
+    <ClInclude Include="Engine\Core\Global\Public\Assimp.h" />
+    <ClInclude Include="Engine\Core\Global\Public\Nlohmann.h" />
+    <ClInclude Include="Engine\Core\Global\Public\OpenGL.h" />
+    <ClInclude Include="Engine\Core\Global\Public\WinSock.h" />
+    <ClInclude Include="Engine\Core\Unit\NetUnit\UNetUnit.h" />
+    <ClInclude Include="Engine\Core\Unit\PhysicsUnit\PhysicsUnit.h" />
+    <ClInclude Include="Engine\Core\Framework\Camera\Camera.h" />
+    <ClInclude Include="Engine\Core\Framework\GameInstance\UGameInstance.h" />
+    <ClInclude Include="Engine\Core\Framework\Interface\IRenderable.h" />
+    <ClInclude Include="Engine\Core\Framework\Level\ULevel.h" />
+    <ClInclude Include="Engine\Core\Framework\Light\DirectionalLight\UDirectionalLight.h" />
+    <ClInclude Include="Engine\Core\Framework\Light\PointLight\UPointLight.h" />
+    <ClInclude Include="Engine\Core\Framework\Light\SpotLight\USpotLight.h" />
+    <ClInclude Include="Engine\Core\Framework\Material\UMaterial.h" />
+    <ClInclude Include="Engine\Core\Framework\Mesh\UMesh.h" />
+    <ClInclude Include="Engine\Core\Framework\Model\UModel.h" />
+    <ClInclude Include="Engine\Core\Framework\Program\Program.h" />
+    <ClInclude Include="Engine\Core\Framework\RenderableObject\RenderableObject.h" />
+    <ClInclude Include="Engine\Core\Framework\ShaderFilePool\UShaderFilePool.h" />
+    <ClInclude Include="Engine\Core\Framework\Shader\FragmentShader\UFragmentShader.h" />
+    <ClInclude Include="Engine\Core\Framework\Shader\GeometryShader\UGeometryShader.h" />
+    <ClInclude Include="Engine\Core\Framework\Shader\TESSControlShader\UTESSControlShader.h" />
+    <ClInclude Include="Engine\Core\Framework\Shader\TESSEvaluationShader\UTESSEvaluationShader.h" />
+    <ClInclude Include="Engine\Core\Framework\Shader\UShader.h" />
+    <ClInclude Include="Engine\Core\Framework\Shader\VertexShader\UVertexShader.h" />
+    <ClInclude Include="Engine\Core\Framework\Texture\Texture2D\UTexture2D.h" />
+    <ClInclude Include="Engine\Core\Framework\Texture\TextureCube\UTextureCube.h" />
+    <ClInclude Include="Engine\Core\Framework\Texture\UTexture.h" />
+    <ClInclude Include="Engine\Core\Unit\RenderingUnit\RenderingUnit.h" />
+    <ClInclude Include="Engine\Core\Framework\Utils\FileLoader\UFileLoader.h" />
+    <ClInclude Include="Engine\Core\Global\Global.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Engine\Shader\Boxes\Box_001.comp" />
+    <None Include="Engine\Shader\Boxes\Box_001.frag" />
+    <None Include="Engine\Shader\Boxes\Box_001.geom" />
+    <None Include="Engine\Shader\Boxes\Box_001.tessc" />
+    <None Include="Engine\Shader\Boxes\Box_001.tesse" />
+    <None Include="Engine\Shader\Boxes\Box_001.vert" />
+    <None Include="Engine\Shader\FragmentShader.frag" />
+    <None Include="Engine\Shader\Public\Light.glsl" />
+    <None Include="Engine\Shader\VertexShader.vert" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Assets\Textures\container2.png" />
+    <Image Include="Assets\Textures\container2_specular.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="Engine\Config\Config.xml" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="..\packages\Assimp.redist.3.0.0\build\native\Assimp.redist.targets" Condition="Exists('..\packages\Assimp.redist.3.0.0\build\native\Assimp.redist.targets')" />
+    <Import Project="..\packages\Assimp.3.0.0\build\native\Assimp.targets" Condition="Exists('..\packages\Assimp.3.0.0\build\native\Assimp.targets')" />
+  </ImportGroup>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Assimp.redist.3.0.0\build\native\Assimp.redist.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Assimp.redist.3.0.0\build\native\Assimp.redist.targets'))" />
+    <Error Condition="!Exists('..\packages\Assimp.3.0.0\build\native\Assimp.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Assimp.3.0.0\build\native\Assimp.targets'))" />
+  </Target>
+</Project>
