@@ -1,4 +1,1 @@
-﻿LINK : warning LNK4098: defaultlib 'LIBCMT' conflicts with use of other libs; use /NODEFAULTLIB:library
-LINK : warning LNK4098: defaultlib 'MSVCRT' conflicts with use of other libs; use /NODEFAULTLIB:library
-glew32s.lib(glew.obj) : warning LNK4099: PDB '' was not found with 'glew32s.lib(glew.obj)' or at ''; linking object as if no debug info
-  SpicesRenderer.vcxproj -> C:\Users\Regicide Ji\Desktop\Git Repos\pb-jcc\Graphics\_PBRRenderer\SpicesRenderer\Debug\SpicesRenderer.exe
+﻿  SpicesRenderer.vcxproj -> C:\Users\jichengcheng\Desktop\GitHub\Graphics\_PBRRenderer\SpicesRenderer\Debug\SpicesRenderer.exe

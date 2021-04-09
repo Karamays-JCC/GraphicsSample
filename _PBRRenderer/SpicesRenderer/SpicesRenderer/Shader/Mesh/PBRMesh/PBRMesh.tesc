@@ -21,12 +21,12 @@ void main()
 	tese_normal[gl_InvocationID] = tesc_normal[gl_InvocationID];
 	tese_uv[gl_InvocationID] = tesc_uv[gl_InvocationID];
 
-	float distance0 = distance(camera_position, tesc_position[0]); 
-	float distance1 = distance(camera_position, tesc_position[1]); 
-	float distance2 = distance(camera_position, tesc_position[2]); 
-
 	if (gl_InvocationID == 0)
 	{
+		float distance0 = distance(camera_position, tesc_position[0]); 
+		float distance1 = distance(camera_position, tesc_position[1]); 
+		float distance2 = distance(camera_position, tesc_position[2]); 
+
 		gl_TessLevelOuter[0] = GetTessLevel(distance1, distance2);
 		gl_TessLevelOuter[1] = GetTessLevel(distance2, distance0);
 		gl_TessLevelOuter[2] = GetTessLevel(distance0,distance1);
